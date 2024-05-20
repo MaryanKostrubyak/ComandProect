@@ -1,0 +1,102 @@
+[
+  {
+    "category": "meat",
+    "data": [
+      {
+        "name": "Хаошао роу",
+        "image": "Assets/Images/Meat/chinepel.jpg",
+        "price": 329.99
+      },
+      {
+        "name": "Тандури курка",
+        "image": "Assets/Images/Meat/korkuk.jpg",
+        "price": 374.99
+      },
+      {
+        "name": "Бульгоги",
+        "image": "Assets/Images/Meat/japanlap.jpg",
+        "price": 449.99
+      }
+    ]
+  },
+  {
+    "category": "fish",
+    "data": [
+      {
+        "name": "Суші сет \"Філадельфія\"",
+        "image": "Assets/Images/Fish/riby.jpg",
+        "price": 569.99
+      },
+      {
+        "name": "Пад тай",
+        "image": "Assets/Images/Fish/padtai.jpg",
+        "price": 509.99
+      },
+      {
+        "name": "Кимчічіге",
+        "image": "Assets/Images/Fish/kimchichege.jpg",
+        "price": 629.99
+      }
+    ]
+  },
+  {
+    "category": "vegan",
+    "data": [
+      {
+        "name": "Паніровані роли з овочами",
+        "image": "Assets/Images/Vegan/vegroll.jpg",
+        "price": 239.99
+      },
+      {
+        "name": "Темпура овочі",
+        "image": "Assets/Images/Vegan/tempura.jpg",
+        "price": 254.99
+      },
+      {
+        "name": "Тофу зі свіжими овочами",
+        "image": "Assets/Images/Vegan/tofu.jpg",
+        "price": 299.99
+      }
+    ]
+  },
+  {
+    "category": "sides",
+    "data": [
+      {
+        "name": "Фрі райс",
+        "image": "Assets/Images/Sides/friedrice.jpg",
+        "price": 119.99
+      },
+      {
+        "name": "Наан",
+        "image": "Assets/Images/Sides/naan.jpg",
+        "price": 69.99
+      },
+      {
+        "name": "Кімчі",
+        "image": "Assets/Images/Sides/kimchi.jpg",
+        "price": 99.99
+      }
+    ]
+  },
+  {
+    "category": "drinks",
+    "data": [
+      {
+        "name": "Матча лате",
+        "image": "Assets/Images/Drinks/matchalatte.jpg",
+        "price": 79.99
+      },
+      {
+        "name": "Манго ласі",
+        "image": "Assets/Images/Drinks/mangolassi.jpg",
+        "price": 62.99
+      },
+      {
+        "name": "Чай в бульоні",
+        "image": "Assets/Images/Drinks/chay.jpg",
+        "price": 49.99
+      }
+    ]
+  }
+]

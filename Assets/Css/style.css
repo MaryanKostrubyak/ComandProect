@@ -1,0 +1,1152 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Page */
+.page {
+    overflow: hidden;
+}
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, button {
+    margin: 10px 0;
+  }
+
+  .login__btn {
+
+    background-color:#FF2137;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+
+  }
+
+
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 820px;
+    position: relative;
+
+    background: url("../images/Japan2.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.intro__title {
+    color: #fff;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+
+    background-color: #fff;
+}
+
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header.fixed {
+    padding: 10px 0;
+    background-color: #000000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.header.active {
+    background-color: #000000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+
+/* Nav */
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #FF2137;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__text {
+
+    font-size: 15px;
+    font-weight: 60;
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+
+.nav__link:hover {
+    color: #FF2137;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+
+
+/* Section */
+.section {
+    padding: 80px 0;
+}
+
+
+.section--gray {
+    background-color: #f8f8f8;
+}
+
+.section--clients {
+    position: relative;
+    background: #000000 url("../images/Japan3.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.section__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+
+    background-color: #FF2137;
+}
+
+.section__text {
+    font-size: 15px;
+    color: #999;
+}
+
+/* Card */
+.card {
+    margin: 80px -15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card__item {
+    width: 33.33333%;
+    padding: 0 15px;
+}
+
+.card__inner {
+    position: relative;
+    background-color: #000000;
+}
+
+.card__inner:hover .card__img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.card__inner:hover .card__img img {
+    opacity: .1;
+}
+
+.card__inner:hover .card__text {
+    opacity: 1;
+}
+
+.card__img {
+    background: linear-gradient(to bottom, #FF2137, #FFA14E);
+
+    transition: transform .2s linear;
+}
+
+.card__img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity .1s linear;
+}
+
+.card__text {
+    width: 100%;
+
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+
+    transition: opacity .2s linear;
+}
+
+
+/* shop*/
+.shop {
+    position: relative;
+}
+
+
+.shop .slick-slider {
+
+padding: 0 110px;
+
+}
+
+
+.shop__photo {
+    display: block;
+    width: 450px;
+    height: 270px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.shop__text {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    font-style: 'Kaushan Script', cursiv;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+.shop__button {
+
+    background-color:#FF2137;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.arrow {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow--prev {
+    left: 20px;
+}
+
+.arrow--next {
+    right: 20px;
+}
+
+
+.shop__btn--next, .slick-next {
+    right: 0;
+    transform: rotate(135deg);
+}
+
+
+.shop__item {
+
+    min-height: 210px;
+    position: center;
+    
+}
+
+/* Categories */
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .category {
+    background-color:#FF2137;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: 5px;
+    width: 200px;
+    margin-bottom: 5px;
+  }
+  
+  .category:hover {
+    background-color: #8d2323;
+  }
+
+
+
+/* Clients */
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+
+
+.clients__item {
+    width: 50%;
+    padding: 0 45px 0 175px;
+    padding-left: 0px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.clients__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.clients__name {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.clients__text {
+    font-size: 15px;
+    color: #999;
+}
+
+.clients__text:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 15px auto;
+
+    background-color: #FF2137;
+}
+
+/* Works */
+.works {
+    display: flex;
+}
+
+.works__col {
+    flex: 1 1 0;
+}
+
+.works__item {
+    position: relative;
+
+    background: linear-gradient(to bottom, #FF2137, #FFA14E);
+}
+
+.works__item:hover .works__image {
+    opacity: .1;
+}
+
+.works__item:hover .works__info {
+    opacity: 1;
+}
+
+.works__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    transition: opacity .2s linear;
+}
+
+.works__info {
+    width: 100%;
+    padding: 0 15px;
+
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+}
+
+.works__title {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.works__text {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Game */
+
+.game-container {
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+    position: relative;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-image: url('../images/bgjapan.png');
+    background-position: right; 
+}
+
+.player {
+    width: 64px;
+    height: 96px; 
+    position: absolute;
+    bottom: 0;
+    background-image: url('../images/cook2.png'); 
+    background-size: cover; 
+}
+
+.food, .kitchen-tool {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.score {
+    color: white; 
+    font-size: 24px; 
+    text-shadow: 4px 4px 8px black; 
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.game__ovetext {
+    color: white; 
+    font-size: 24px; 
+    text-shadow: 4px 4px 8px black; 
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.life {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+.life img {
+    width: 30px; 
+    height: auto; 
+    margin-bottom: 5px; 
+}
+
+.start__btn, .restart__btn {
+    background-color: #FF2137;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+#startMenu, #endMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+#pauseMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.developer-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.developer-info a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 576px) {
+
+
+    .burger {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+    
+.header {
+    padding: 10px 0;
+}
+
+.header__logo {
+
+    font-size: 20px;
+
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section--devices {
+    padding-bottom: 0;
+}
+
+.card {
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.card__item {
+    width: 100%;
+    max-width: 410px;
+    margin-bottom: 30px;
+}
+
+.card__item:last-child {
+    margin-bottom: 0;
+}
+
+.clients__item {
+    padding-left: 0;
+    text-align: center;
+}
+
+.clients__text:before {
+    margin: 15px auto;
+}
+
+
+    .intro__title {
+        font-size: 40px;
+    }
+    .shop .slick-slider {
+        padding: 0 20px; 
+    }
+
+    .shop__photo {
+        width: 70%;
+        height: auto; 
+    }
+
+    .shop__text {
+        font-size: 18px; 
+    }
+
+    .shop__button {
+        padding: 10px 20px; 
+        font-size: 14px; 
+        width: 80%; 
+    }
+
+    .categories {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .category {
+        width: 100%; 
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    .arrow {
+        font-size: 24px; 
+    }
+
+    .arrow--prev {
+        left: 20px; 
+    }
+
+    .arrow--next {
+        right: 20px; 
+    }
+
+    .works__text {
+        font-size: 8px;
+    }
+
+    
+.works__title {
+    font-size: 12px;
+}
+
+.game-container {
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+}
+
+.player {
+    width: 48px;
+    height: 72px;
+}
+
+.food, .kitchen-tool {
+    width: 20px;
+    height: 20px;
+}
+
+.score, .game__ovetext {
+    font-size: 18px;
+}
+
+.life img {
+    width: 20px;
+    margin-bottom: 3px;
+}
+
+.start__btn, .restart__btn {
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+}
+
+.login__btn {
+
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+
+}
+
+    .works {
+        flex-wrap: wrap;
+    }
+
+    .works__col {
+        flex: none;
+        width: 50%;
+    }
+    
+    .card__text {
+        width: 90%;
+        font-size: 10px;
+
+    }
+    
+    .container__footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .developer-info, .user-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .copyright {
+        margin-top: 10px;
+    }
+
+
+}
+  
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+.header {
+    padding: 10px 0;
+}
+
+
+.section {
+    padding: 40px 0;
+}
+
+.section--devices {
+    padding-bottom: 0;
+}
+
+.card {
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.card__item {
+    width: 100%;
+    max-width: 410px;
+    margin-bottom: 30px;
+}
+
+.card__item:last-child {
+    margin-bottom: 0;
+}
+
+.clients__item {
+    padding-left: 0;
+    text-align: center;
+}
+
+.clients__text:before {
+    margin: 15px auto;
+}
+
+.intro__title {
+    font-size: 60px;
+}
+
+    .category {
+        width:150px;
+        height: 65px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .works__text {
+        font-size: 10px;
+    }
+
+    .game-container {
+        width: 100%;
+        height: 400px;
+        margin: 20px auto;
+    }
+    
+    .player {
+        width: 48px;
+        height: 72px;
+    }
+    
+    .food, .kitchen-tool {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .score, .game__ovetext {
+        font-size: 18px;
+    }
+    
+    .life img {
+        width: 20px;
+        margin-bottom: 3px;
+    }
+    
+    .start__btn, .restart__btn {
+        width: 120px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .life img {
+        width: 30px; 
+    }
+
+    .start__btn, .restart__btn {
+        width: 120px; 
+        height: 30px; 
+    }
+
+    .works {
+        flex-wrap: wrap;
+    }
+
+    .works__col {
+        flex: none;
+        width: 50%;
+    }
+    
+    .card__text {
+        width: 90%;
+        font-size: 10px;
+
+    }
+    
+    .footer__text {
+       font-size: 12px;
+    }
+
+}
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    .intro__title {
+        font-size: 110px;
+    }
+
+    .category {
+        width:150px;
+        height: 65px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .works__text {
+        font-size: 10px;
+    }
+
+    .game-container {
+        width: 600px; 
+        height: 400px; 
+        margin: 30px auto; 
+        border: 2px solid #000;
+        overflow: hidden;
+        background-position: center; 
+    }
+
+    .player {
+        width: 50px; 
+        height: 70px; 
+    }
+
+    .food, .kitchen-tool {
+        width: 20px; 
+        height: 20px; 
+    }
+
+    .score, .game__ovetext {
+        font-size: 18px; 
+    }
+
+    .life img {
+        width: 30px; 
+    }
+
+    .start__btn, .restart__btn {
+        width: 120px; 
+        height: 30px; 
+    }
+
+    .works {
+        flex-wrap: wrap;
+    }
+
+    .works__col {
+        flex: none;
+        width: 50%;
+    }
+    
+    .card__text {
+        width: 90%;
+        font-size: 10px;
+
+    }
+    
+    .footer__text {
+       font-size: 12px;
+    }
+
+  }
+  
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .intro__title {
+        font-size: 110px;
+    }
+
+    .category {
+        width:180px;
+        height: 65px;
+        text-align: center;
+    }
+
+    .works__text {
+        font-size: 10px;
+    }
+
+    
+.clients__item {
+    padding-left: 0;
+    text-align: center;
+}
+
+.clients__text:before {
+    margin: 15px auto;
+}
+    
+}

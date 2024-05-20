@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+<meta charset="UFT-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="Assets/Css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+<title>Азіатська кухня</title>
+
+</head>
+
+<body>
+
+   <div id="loginModal" class="modal">
+
+      <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2>Введіть ваше ім'я</h2>
+
+        <form id="loginForm">
+
+          <input type="text" id="username" placeholder="Ім'я" required>
+
+          <button class="login__btn">Увійти</button>
+
+        </form>
+
+      </div>
+      
+    </div>
+
+    <header class="header" id="header">
+      <div class="container">
+          <div class="header__inner">
+              <div class="header__logo" data-scroll="#intro">Азіатська кухня</div>
+              <div class="burger" id="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+              <nav class="nav" id="nav">
+                  <a class="nav__link" href="#menu"><span class="nav__text">Страви</span></a>
+                  <a class="nav__link" href="#categor"><span class="nav__text">Категорії</span></a>
+                  <a class="nav__link" href="#clie"><span class="nav__text">Відгуки</span></a>
+                  <a class="nav__link" href="#game"><span class="nav__text">Гра</span></a>
+              </nav>
+          </div>
+      </div>
+  </header>
+
+<div class="page">
+	<div class="intro" id="intro">
+		<div class="container">
+			<div class="intro__inner">
+	            <h1 class="intro__title">Вітаємо на сайті!</h1>
+	        </div>
+        </div>
+</div>
+	
+
+<section class="section" id="about">
+	
+	<div class="container" id="menu">
+		
+		<div class="section__header">
+
+
+			<h2 class="section__title">Що є в меню?</h2>
+			
+		</div>
+
+		<div class="card">
+
+			<div class="card__item">
+				<div class="card__inner">
+
+				<div class="card__img">
+					<img src="Assets/Images/chinepel.jpg" alt="">
+				</div>
+				<div class="card__text">Пельмені цзяоцзи — одна з важливих складових у культурі китайців.</div>
+				</div>
+			</div>
+			<div class="card__item">
+				<div class="card__inner">
+				<div class="card__img">
+					<img src="Assets/Images/korkuk.jpg" alt="">
+				</div>
+				 <div class="card__text">Куксу або Куксі — корейський холодний суп з локшиною.</div>
+				 </div>
+			</div>
+			<div class="card__item">
+				<div class="card__inner">
+				<div class="card__img">
+					<img src="Assets/Images/japanlap.jpg" alt="">
+				</div>
+				 <div class="card__text">Рамен — страва японської кухні з пшеничною локшиною.</div>
+				 </div>
+			</div>
+			
+		</div>
+
+	</div>
+
+</section>
+
+<div class="section section--gray" id="categor">
+	
+   <div class="container">
+
+      <div class="categories">
+        <button class="category" data-category="meat">М'ясні страви</button>
+        <button class="category" data-category="fish">Рибні страви</button>
+        <button class="category" data-category="vegan">Вегетаріанські страви</button>
+        <button class="category" data-category="sides">Гарніри</button>
+        <button class="category" data-category="drinks">Напої</button>
+      </div>
+      
+     <div class="shop">
+      <div class="slider-container">
+
+         <div class="shop__item">
+
+            <img class="shop__photo" src="Assets/Images/Meat/chinepel.jpg" alt="">
+
+            <div class="shop__text">Хаошао роу</div>
+
+            <div class="shop__text">329.99 грн</div>
+
+            <button class="shop__button">Замовити</button>
+
+       </div>
+
+      </div>
+
+      <div>
+
+       <div class="shop__item">
+
+            <img class="shop__photo" src="Assets/Images/Meat/korkuk.jpg" alt="">
+
+            <div class="shop__text">Тандури курка</div>
+
+            <div class="shop__text">374.99 грн</div>
+
+            <button class="shop__button">Замовити</button>
+
+       </div>
+
+      </div>
+
+      <div>
+
+       <div class="shop__item">
+
+            <img class="shop__photo" src="Assets/Images/japanlap.jpg" alt="">
+
+            <div class="shop__text">Бульгоги</div>
+
+            <div class="shop__text">449.99 грн</div>
+
+            <button class="shop__button">Замовити</button>
+
+       </div>
+
+      </div>
+         
+         <div class="arrow arrow--prev">&lt;</div>
+        <div class="arrow arrow--next">&gt;</div>
+      </div>
+     </div>
+   </div>
+
+   
+
+</div>
+
+</section>
+
+<section class="section section--clients" id="clie">
+	
+<div class="container">
+	
+<div class="section__header">
+   	  	<h2 class="clients__title">Відгуки від користувачів</h2>
+   	  	
+</div>
+
+<div class="clients">
+	
+<div class="clients__item">
+
+    <div class="clients__content">
+    	
+      <div class="clients__name">Анонімній користувач</div>
+
+      <div class="clients__text">Чудова лапша і саме головне дешева. Рекомендую !</div>
+
+    </div>
+
+</div>
+<div class="clients__item">
+
+    <div class="clients__content">
+    	
+      <div class="clients__name">Людмила Сагайдачна</div>
+
+      <div class="clients__text">Чудові китайські пільмені. І сервіс на висоті !</div>
+
+    </div>
+
+</div>
+<div class="clients__item">
+
+    <div class="clients__content">
+    	
+      <div class="clients__name">Михайло Хмельницький</div>
+
+      <div class="clients__text">Рамен був дуже смачним !</div>
+
+    </div>
+
+</div>
+<div class="clients__item">
+
+    <div class="clients__content">
+    	
+      <div class="clients__name">Анонімний користувач</div>
+
+      <div class="clients__text">Пробував всю їжу , і вона просто чудесна !</div>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="game">
+
+
+   <div class="game-container">
+
+      <div class="player"></div>
+      
+      <div id="startMenu">
+
+          <button class="start__btn" id="startButton">Почати гру</button>
+
+      </div>
+
+      <div id="pauseMenu" style="display: none;">
+
+         <p class="game__ovetext" id="pauseText">Пауза</p>
+
+     </div>
+
+      <div id="endMenu" style="display: none;">
+
+          <p class="game__ovetext" id="gameOverText"></p>
+
+          <p  class="game__ovetext" id="scoreText"></p>
+
+          <button class="restart__btn" id="restartButton">Рестарт</button>
+
+      </div>
+
+  </div>
+
+  <script src="Assets/Js/game.js"></script>
+
+</section>
+
+<section class="section" id="works">
+	
+<div class="container">
+	
+<div class="section__header">
+   	  	<h2 class="section__title">Про наші плани</h2>
+   	  	<div class="section__text">
+   	  		
+             <p>На данний момент ми плануємо розширяти арсотимент страв які ви можете заказати у нас . Знизу ви можете побачити які страви ви побачите в майбутьному</p>
+
+   	  	</div>
+   	  </div>
+
+</div>
+
+      <div class="works">
+   	  	
+        <div class="works__col">
+        	
+           <div class="works__item">
+           	
+              <img class="works__image" src="Assets/Images/2.jpg" alt="">
+
+              <div class="works__info">
+              	
+                 <div class="works__title">Лагман</div>
+
+                 <div class="works__text">Лагман складається з ваджи (овочево-м'ясної частини) і локшини, які з'єднують перед подачею на стіл.</div>
+              
+              
+              </div>
+
+           </div>
+
+           <div class="works__item">
+           	
+              <img class="works__image" src="Assets/Images/3.jpg" alt="">
+
+              <div class="works__info">
+              	
+                 <div class="works__title">Качка по-пекінськи</div>
+
+                 <div class="works__text">Цій страві вже близько 700 років, а процес приготування займає близько двох діб.</div>
+              
+              
+              </div>
+
+           </div>
+
+        </div>
+        <div class="works__col">
+        	
+           <div class="works__item">
+           	
+              <img class="works__image" src="Assets/Images/1.jpg" alt="">
+
+              <div class="works__info">
+              	
+                 <div class="works__title">Гунбао</div>
+
+                 <div class="works__text">Символ китайської гастрономії</div>
+              
+              
+              </div>
+
+           </div>
+
+           <div class="works__item">
+           	
+              <img class="works__image" src="Assets/Images/4.jpg" alt="">
+
+              <div class="works__info">
+              	
+                 <div class="works__title">Пулькогі</div>
+
+                 <div class="works__text">Це страва корейської кухні, рід барбекю, зазвичай готується з маринованої яловичини або телятини, іноді - з курятини або свинини.</div>
+              
+              
+              </div>
+
+          </div>
+
+        </div>
+
+        <div class="works__col">
+        	
+            <div class="works__item">
+           	
+              <img class="works__image" src="Assets/Images/5.jpg" alt="">
+
+              <div class="works__info">
+              	
+                 <div class="works__title">Суші</div>
+
+                 <div class="works__text">Традиційна страва японської кухні зроблена на основі рису, обробленого рисовим оцтом чи сіллю, та різноманітних начинок чи нашарувань, серед яких переважають морські продукти, але можуть входити м'ясо, овочі, водорості, гриби чи яйця.</div>
+              
+              
+              </div>
+              
+              </div>
+
+              <div class="works__item">
+           	
+              <img class="works__image" src="Assets/Images/8.jpg" alt="">
+
+              <div class="works__info">
+              	
+                 <div class="works__title">Кацудон</div>
+
+                 <div class="works__text">Це страва японської кухні донбурі-типу, що являє собою котлету зі свинини у яйці, поданій у чаші з вареним рисом.</div>
+              
+              
+              </div>
+              
+              </div>
+
+        </div>
+        <div class="works__col">
+        	
+           <div class="works__item">
+           	
+              <img class="works__image" src="Assets/Images/6.jpg" alt="">
+
+              <div class="works__info">
+              	
+                 <div class="works__title">Гюдон</div>
+
+                 <div class="works__text">Це популярна страва японської кухні, що складається з рису, вареної яловичини та цибулі з негострим, солодким соусом.</div>
+              
+              
+              </div>
+
+           </div>
+
+           <div class="works__item">
+           	
+              <img class="works__image" src="Assets/Images/7.jpg" alt="">
+
+              <div class="works__info">
+              	
+                 <div class="works__title">Японське карі</div>
+
+                 <div class="works__text">Це популярна японська страва на основі соусу карі, що використовується як приправа до вареного рису, іноді вживається з хлібом (зокрема як начинка для пиріжків) або з локшиною.</div>
+              
+              
+              </div>
+
+          </div>
+
+        </div>
+
+   	  </div>
+
+</section>
+
+<footer class="footer">
+   <div class="container__footer">
+       <div class="footer-content">
+           <div class="developer-info">
+               <h3 class="footer__text">Розробники</h3>
+               <p class="footer__text">Було розроблено студентами ПНУ</p>
+               <a href="https://github.com/MaryanKostrubyak" target="_blank">Коструб'як М. М.</a>
+               <a href="https://github.com/EvgenUP" target="_blank">Перець Є. Ю.</a>
+               <a href="https://github.com/MaksymVynnychuk" target="_blank">Винничук М. П.</a>
+           </div>
+           <div class="user-info">
+               <h3 class="footer__text">Результат в нашій аркадній грі</h3>
+               <p class="footer__text" id="bestScoreDisplay">Ваш найліпший результат в нашій грі: 0</p>
+           </div>
+       </div>
+       <div class="copyright">
+           <p class="footer__text">&copy; Всі права захищені. Азіатська кухня. Усі матеріали є власністю їх відповідних власників.</p>
+       </div>
+   </div>
+</footer>
+
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="Assets/Js/app.js"></script>
+
+<script src="Assets/Js/modal.js"></script>
+
+<script src="Assets/Js/slider.js"></script>
+
+<script src="Assets/Js/categ.js"></script>
+
+</body>
+
+</html>
