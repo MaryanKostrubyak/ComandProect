@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 820px;
     position: relative;
 
-    background: url("../images/Japan2.jpg") center no-repeat;
+    background: url("Assets/images/Japan2.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section--clients {
     position: relative;
-    background: #000000 url("../images/Japan3.jpg") center no-repeat;
+    background: #000000 url("Assets/images/Japan3.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -585,7 +585,7 @@ padding: 0 110px;
     position: relative;
     border: 2px solid #000;
     overflow: hidden;
-    background-image: url('../images/bgjapan.png');
+    background-image: url('Assets/images/bgjapan.png');
     background-position: right; 
 }
 
@@ -594,7 +594,7 @@ padding: 0 110px;
     height: 96px; 
     position: absolute;
     bottom: 0;
-    background-image: url('../images/cook2.png'); 
+    background-image: url('Assets/images/cook2.png'); 
     background-size: cover; 
 }
 
